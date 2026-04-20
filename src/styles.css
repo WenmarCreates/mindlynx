@@ -70,47 +70,48 @@
 :root {
   --radius: 0.75rem;
 
-  /* Brand palette derived from MindLynx logo: deep indigo, navy, teal-cyan */
-  --background: oklch(0.985 0.005 230);
-  --foreground: oklch(0.22 0.08 270);
+  /* Brand palette derived from VeriCare: deep navy, bright teal, soft mint */
+  --background: oklch(0.985 0.008 200);
+  --foreground: oklch(0.24 0.05 230);
 
-  --ink: oklch(0.22 0.08 270);
-  --cream: oklch(0.97 0.01 220);
+  --ink: oklch(0.24 0.05 230);
+  --cream: oklch(0.95 0.025 180);
   /* "gold" token retained for backward-compat — now mapped to brand teal accent */
-  --gold: oklch(0.72 0.12 210);
-  --brand-indigo: oklch(0.32 0.15 280);
-  --brand-navy: oklch(0.30 0.12 260);
-  --brand-teal: oklch(0.72 0.12 210);
-  --brand-teal-soft: oklch(0.82 0.08 205);
+  --gold: oklch(0.62 0.13 195);
+  --brand-navy-deep: oklch(0.26 0.06 235);
+  --brand-navy: oklch(0.32 0.07 230);
+  --brand-teal: oklch(0.62 0.13 195);
+  --brand-teal-bright: oklch(0.68 0.15 190);
+  --brand-mint: oklch(0.92 0.04 180);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.22 0.08 270);
+  --card-foreground: oklch(0.24 0.05 230);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.22 0.08 270);
+  --popover-foreground: oklch(0.24 0.05 230);
 
-  --primary: oklch(0.30 0.13 270);
-  --primary-foreground: oklch(0.97 0.01 220);
+  --primary: oklch(0.26 0.06 235);
+  --primary-foreground: oklch(0.97 0.02 180);
 
-  --secondary: oklch(0.95 0.015 220);
-  --secondary-foreground: oklch(0.30 0.13 270);
+  --secondary: oklch(0.92 0.04 180);
+  --secondary-foreground: oklch(0.26 0.06 235);
 
-  --muted: oklch(0.95 0.015 220);
-  --muted-foreground: oklch(0.50 0.04 260);
+  --muted: oklch(0.95 0.02 195);
+  --muted-foreground: oklch(0.48 0.04 230);
 
-  --accent: oklch(0.72 0.12 210);
-  --accent-foreground: oklch(0.22 0.08 270);
+  --accent: oklch(0.62 0.13 195);
+  --accent-foreground: oklch(1 0 0);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.9 0.015 220);
-  --input: oklch(0.9 0.015 220);
-  --ring: oklch(0.72 0.12 210);
-  --chart-1: oklch(0.32 0.15 280);
-  --chart-2: oklch(0.72 0.12 210);
-  --chart-3: oklch(0.30 0.12 260);
-  --chart-4: oklch(0.82 0.08 205);
-  --chart-5: oklch(0.50 0.10 240);
+  --border: oklch(0.9 0.02 200);
+  --input: oklch(0.9 0.02 200);
+  --ring: oklch(0.62 0.13 195);
+  --chart-1: oklch(0.26 0.06 235);
+  --chart-2: oklch(0.62 0.13 195);
+  --chart-3: oklch(0.32 0.07 230);
+  --chart-4: oklch(0.92 0.04 180);
+  --chart-5: oklch(0.48 0.08 215);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -198,7 +199,7 @@
   }
 
   .text-gradient-gold {
-    background: linear-gradient(120deg, oklch(0.72 0.12 210), oklch(0.32 0.15 280));
+    background: linear-gradient(120deg, oklch(0.68 0.15 190), oklch(0.26 0.06 235));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -271,10 +272,10 @@
   display: inline-flex;
   border-radius: 9999px;
   padding: 1.5px;
-  background: linear-gradient(120deg, oklch(0.72 0.12 210), oklch(0.32 0.15 280), oklch(0.72 0.12 210));
+  background: linear-gradient(120deg, oklch(0.62 0.13 195), oklch(0.26 0.06 235), oklch(0.62 0.13 195));
   background-size: 200% 100%;
   animation: shimmer 4s linear infinite;
-  box-shadow: 0 8px 30px -12px oklch(0.32 0.15 280 / 0.45);
+  box-shadow: 0 8px 30px -12px oklch(0.26 0.06 235 / 0.45);
 }
 .brand-badge-inner {
   display: inline-flex;
@@ -290,7 +291,7 @@
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  background: linear-gradient(90deg, oklch(0.32 0.15 280), oklch(0.72 0.12 210));
+  background: linear-gradient(90deg, oklch(0.26 0.06 235), oklch(0.62 0.13 195));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
