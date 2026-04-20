@@ -1,6 +1,9 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import heroMockup from "@/assets/hero-mockup.jpg";
+
+const HeroParticles = lazy(() => import("./HeroParticles"));
 
 export function Hero() {
   const { scrollY } = useScroll();
