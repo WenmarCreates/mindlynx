@@ -33,9 +33,19 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="eyebrow mb-6"
+              className="mb-6 inline-flex"
             >
-              Behavioral Health Billing Specialists
+              <div className="group relative inline-flex items-center gap-2.5 rounded-full p-[1.5px] bg-[linear-gradient(120deg,oklch(0.72_0.12_210),oklch(0.32_0.15_280),oklch(0.72_0.12_210))] bg-[length:200%_100%] animate-[shimmer_4s_linear_infinite] shadow-[0_8px_30px_-12px_oklch(0.32_0.15_280/0.4)]">
+                <div className="flex items-center gap-2.5 rounded-full bg-background/95 backdrop-blur-sm pl-2.5 pr-4 py-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--brand-teal)] opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--brand-teal)]" />
+                  </span>
+                  <span className="text-[11px] font-medium uppercase tracking-[0.22em] bg-[linear-gradient(90deg,oklch(0.32_0.15_280),oklch(0.72_0.12_210))] bg-clip-text text-transparent">
+                    Behavioral Health Billing Specialists
+                  </span>
+                </div>
+              </div>
             </motion.div>
 
             <motion.h1
