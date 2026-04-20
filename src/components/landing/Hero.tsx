@@ -54,13 +54,13 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif font-light text-foreground"
             >
-              <span className="block text-[clamp(2rem,5vw,4rem)] leading-[1.02] tracking-tight">
+              <span className="block text-[clamp(2.75rem,6.5vw,5.25rem)] leading-[1.0] tracking-tight">
                 Stop Losing&nbsp;Revenue.
               </span>
-              <span className="mt-3 block text-[clamp(2rem,5vw,4rem)] leading-[1.02] tracking-tight italic font-normal text-gradient-gold">
+              <span className="mt-3 block text-[clamp(2.75rem,6.5vw,5.25rem)] leading-[1.0] tracking-tight italic font-normal text-gradient-gold">
                 Get Paid&nbsp;Faster.
               </span>
-              <span className="mt-5 block text-[clamp(1.15rem,2vw,1.6rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light">
+              <span className="mt-6 block text-[clamp(1.4rem,2.4vw,2rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light">
                 Reduce Denials and Recover Unpaid&nbsp;Claims.
               </span>
             </motion.h1>
@@ -72,8 +72,8 @@ export function Hero() {
               className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
             >
               VeriFlow Billing Solutions helps behavioral health clinics reduce
-              denials, recover aged claims, and improve cash&nbsp;flow — all while
-              working inside your current&nbsp;EHR.
+              denials, recover unpaid claims, and improve cash flow without
+              changing your current&nbsp;EHR.
             </motion.p>
 
             <motion.div
