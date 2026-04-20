@@ -10,10 +10,19 @@ export function Hero() {
   const y = useTransform(scrollY, [0, 600], [0, 120]);
   const yReverse = useTransform(scrollY, [0, 600], [0, -100]);
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   return (
     <section id="top" className="relative pt-36 md:pt-44 pb-24 md:pb-32 overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-grid opacity-60" />
+      {mounted && (
+        <div className="absolute inset-0 -z-10 opacity-70 pointer-events-none">
+          <Suspense fallback={null}>
+            <HeroParticles />
+          </Suspense>
+        </div>
+      )}
       <motion.div
         style={{ y }}
         className="absolute -top-40 -left-40 w-[700px] h-[700px] rounded-full -z-10"
