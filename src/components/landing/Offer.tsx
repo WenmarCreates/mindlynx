@@ -1,41 +1,20 @@
 import { Reveal } from "./Reveal";
-import { ArrowRight, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 export function Offer() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section id="offer" className="py-28 md:py-36 bg-[var(--cream)]">
+    <section id="offer" className="py-28 md:py-36">
       <div className="container-px mx-auto max-w-7xl">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <Reveal className="lg:col-span-5 lg:sticky lg:top-32">
-            <div className="eyebrow mb-6">Complimentary Billing Review</div>
+            <div className="eyebrow mb-6">See Where You're Losing Revenue</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              See exactly where your practice is{" "}
-              <span className="italic text-gradient-gold">losing revenue.</span>
+              Let's identify where your practice may be{" "}
+              <span className="italic text-gradient-gold">losing money</span> and how to fix it.
             </h2>
-            <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              In a 30-minute review we'll identify denial patterns, A/R leaks, and
-              recoverable revenue you didn't know existed — yours, no obligation.
-            </p>
-            <div className="mt-8 inline-flex items-center gap-3 text-sm text-foreground/80">
-              <Clock className="h-4 w-4 text-[var(--gold)]" />
-              Limited reviews accepted each month — first come, first served.
-            </div>
-            <ul className="mt-10 space-y-3 text-foreground/80">
-              {[
-                "Full denial-pattern analysis",
-                "A/R aging breakdown",
-                "Estimated recoverable revenue",
-                "Custom action plan delivered to you",
-              ].map((x) => (
-                <li key={x} className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[var(--gold)]" />
-                  {x}
-                </li>
-              ))}
-            </ul>
           </Reveal>
 
           <Reveal delay={0.15} className="lg:col-span-7">
@@ -50,7 +29,7 @@ export function Offer() {
                 <div className="py-16 text-center">
                   <div className="font-serif text-3xl">Thank you.</div>
                   <p className="mt-3 text-muted-foreground max-w-sm mx-auto">
-                    We'll reach out within one business day to schedule your billing review.
+                    We'll reach out shortly to schedule your billing review.
                   </p>
                 </div>
               ) : (
@@ -73,12 +52,9 @@ export function Offer() {
                     />
                   </div>
                   <button type="submit" className="btn-primary mt-8 w-full sm:w-auto group">
-                    Request my billing review
+                    Request My Billing Review
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </button>
-                  <p className="mt-4 text-xs text-muted-foreground">
-                    Your information is confidential and HIPAA-compliant. We never share data.
-                  </p>
                 </>
               )}
             </form>

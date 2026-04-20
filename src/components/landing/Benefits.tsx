@@ -1,44 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import { useInView } from "framer-motion";
 import { Reveal } from "./Reveal";
+import { Check } from "lucide-react";
 
 const benefits = [
-  { stat: "38", suffix: "%", label: "Faster payments from insurance companies" },
-  { stat: "62", suffix: "%", label: "Fewer denied or rejected claims" },
-  { stat: "21", suffix: "d", label: "Average reduction in days-in-A/R" },
-  { stat: "100", suffix: "%", label: "HIPAA-compliant, audit-ready processes" },
-  { stat: "9", suffix: "/10", label: "Clients renew after the first year" },
-  { stat: "0", suffix: "", label: "Disruption to your existing EHR workflow" },
+  "Faster payments from insurance companies",
+  "Fewer denied or rejected claims",
+  "Improved monthly cash flow",
+  "Less stress on your team",
+  "More time focused on patient care",
 ];
-
-function Counter({ to, suffix }: { to: string; suffix: string }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-50px" });
-  const [val, setVal] = useState(0);
-  const target = parseInt(to, 10);
-
-  useEffect(() => {
-    if (!inView || isNaN(target)) return;
-    const dur = 1400;
-    const start = performance.now();
-    let raf = 0;
-    const tick = (t: number) => {
-      const p = Math.min(1, (t - start) / dur);
-      const eased = 1 - Math.pow(1 - p, 3);
-      setVal(Math.round(target * eased));
-      if (p < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [inView, target]);
-
-  return (
-    <span ref={ref}>
-      {isNaN(target) ? to : val}
-      {suffix}
-    </span>
-  );
-}
 
 export function Benefits() {
   return (
@@ -48,21 +17,23 @@ export function Benefits() {
           <div className="max-w-2xl">
             <div className="eyebrow mb-6">What You Can Expect</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Measurable results,
+              The transformation,
               <br />
-              <span className="italic">month after month.</span>
+              <span className="italic">in plain terms.</span>
             </h2>
           </div>
         </Reveal>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-3xl overflow-hidden border border-border">
           {benefits.map((b, i) => (
-            <Reveal key={b.label} delay={i * 0.05}>
+            <Reveal key={b} delay={i * 0.05}>
               <div className="bg-background h-full p-10 transition-colors duration-500 hover:bg-[var(--cream)]">
-                <div className="font-serif text-6xl md:text-7xl font-light text-foreground tracking-tight">
-                  <Counter to={b.stat} suffix={b.suffix} />
+                <div className="h-10 w-10 rounded-full bg-[var(--gold)]/10 text-[var(--gold)] grid place-items-center">
+                  <Check className="h-5 w-5" />
                 </div>
-                <p className="mt-6 text-muted-foreground max-w-xs">{b.label}</p>
+                <p className="mt-6 font-serif text-2xl md:text-[1.6rem] font-light leading-snug text-foreground">
+                  {b}
+                </p>
               </div>
             </Reveal>
           ))}
