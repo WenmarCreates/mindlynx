@@ -41,7 +41,7 @@ export function Hero() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--brand-teal)] opacity-75" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--brand-teal)]" />
                   </span>
-                  <span className="brand-badge-text">
+                  <span className="brand-badge-text whitespace-nowrap text-[9px] sm:text-[11px]">
                     Behavioral Health Billing Specialists
                   </span>
                 </div>
@@ -96,13 +96,13 @@ export function Hero() {
               className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-muted-foreground"
             >
               <span className="inline-flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA Compliant and Secure
+                <ShieldCheck className="h-4 w-4 text-[var(--gold)] shrink-0" /> HIPAA Compliant and Secure
               </span>
               <span className="inline-flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Direct EHR Integration, No Migration Required
+                <Sparkles className="h-4 w-4 text-[var(--gold)] shrink-0" /> Direct EHR Integration, No Migration Required
               </span>
-              <span className="hidden md:inline-flex items-center gap-2">
-                <Stethoscope className="h-4 w-4 text-[var(--gold)]" /> Specialized Behavioral Health Coding
+              <span className="inline-flex items-center gap-2">
+                <Stethoscope className="h-4 w-4 text-[var(--gold)] shrink-0" /> Specialized Behavioral Health Coding
               </span>
             </motion.div>
           </div>
