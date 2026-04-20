@@ -66,9 +66,11 @@ export function Nav() {
               </a>
             ))}
           </nav>
-          <a href="#contact" className="hidden md:inline-flex btn-primary !py-2.5 !px-5 text-xs">
-            Book a Consultation
-          </a>
+          <div className="hidden md:block">
+            <a href="#contact" className="btn-primary !py-2.5 !px-5 text-xs">
+              Book a Consultation
+            </a>
+          </div>
           <button
             type="button"
             aria-label={open ? "Close menu" : "Open menu"}
