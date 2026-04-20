@@ -12,14 +12,53 @@ const HELP_OPTIONS = [
   "Not sure yet — just exploring",
 ];
 
+const WEBHOOK_URL =
+  "https://aismartlinx.app.n8n.cloud/webhook-test/c5dfec92-6292-4f94-9ed2-002f1779a8c6";
+
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [selected, setSelected] = useState<string[]>([]);
 
   const toggle = (option: string) => {
     setSelected((prev) =>
       prev.includes(option) ? prev.filter((o) => o !== option) : [...prev, option],
     );
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setError(null);
+    setSubmitting(true);
+    try {
+      const formData = new FormData(e.currentTarget);
+      const payload = {
+        name: String(formData.get("name") || ""),
+        practice: String(formData.get("practice") || ""),
+        email: String(formData.get("email") || ""),
+        phone: String(formData.get("phone") || ""),
+        message: String(formData.get("message") || ""),
+        help: selected,
+        submittedAt: new Date().toISOString(),
+        source: typeof window !== "undefined" ? window.location.href : "",
+      };
+
+      const res = await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) throw new Error(`Request failed (${res.status})`);
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Something went wrong. Please try again.",
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -57,10 +96,7 @@ export function Contact() {
 
           <Reveal delay={0.15} className="lg:col-span-7">
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
+              onSubmit={handleSubmit}
               className="rounded-3xl bg-card border border-border p-8 md:p-12 shadow-elegant"
             >
               {submitted ? (
@@ -131,8 +167,18 @@ export function Contact() {
                     />
                   </div>
 
-                  <button type="submit" className="btn-primary mt-8 w-full sm:w-auto group">
-                    Submit
+                  {error && (
+                    <p className="mt-6 text-sm text-red-600" role="alert">
+                      {error}
+                    </p>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="btn-primary mt-8 w-full sm:w-auto group disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    {submitting ? "Sending…" : "Submit"}
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </>
