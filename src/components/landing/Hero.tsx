@@ -54,11 +54,11 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif font-light text-foreground"
             >
-              <span className="block text-[clamp(2.75rem,6.5vw,5.25rem)] leading-[1.0] tracking-tight">
-                Stop Losing&nbsp;Revenue.
+              <span className="block whitespace-nowrap text-[clamp(1.85rem,4.4vw,3.5rem)] leading-[1.05] tracking-tight">
+                Stop Losing Revenue.
               </span>
-              <span className="mt-3 block text-[clamp(2.75rem,6.5vw,5.25rem)] leading-[1.0] tracking-tight italic font-normal text-gradient-gold">
-                Get Paid&nbsp;Faster.
+              <span className="mt-3 block whitespace-nowrap text-[clamp(1.85rem,4.4vw,3.5rem)] leading-[1.05] tracking-tight italic font-normal text-gradient-gold">
+                Get Paid Faster.
               </span>
               <span className="mt-6 block text-[clamp(1.4rem,2.4vw,2rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light">
                 Reduce Denials and Recover Unpaid&nbsp;Claims.
