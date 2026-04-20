@@ -45,7 +45,7 @@ export function Nav() {
             <motion.img
               src={logo}
               alt="MindLynx"
-              animate={{ height: scrolled ? 72 : 112 }}
+              animate={{ height: scrolled ? 56 : 80 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="w-auto"
             />
