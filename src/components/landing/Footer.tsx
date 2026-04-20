@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl py-16 grid md:grid-cols-3 gap-10">
         <div>
           <div className="bg-primary-foreground/5 rounded-2xl p-4 inline-block">
-            <img src={logo} alt="MindLynx Billing Solutions" className="h-12 w-auto" />
+            <img src={logo} alt="MindLynx Billing Solutions" className="h-20 w-auto" />
           </div>
           <p className="mt-4 text-sm max-w-xs">
             Behavioral Health Billing Specialists
