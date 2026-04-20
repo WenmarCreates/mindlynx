@@ -101,8 +101,8 @@ export function Hero() {
               <span className="inline-flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Direct EHR Integration, No Migration Required
               </span>
-              <span className="hidden md:inline-flex items-center gap-2">
-                <Stethoscope className="h-4 w-4 text-[var(--gold)]" /> Specialized Behavioral Health Coding
+              <span className="inline-flex items-center gap-2">
+                <Stethoscope className="h-4 w-4 text-[var(--gold)] shrink-0" /> Specialized Behavioral Health Coding
               </span>
             </motion.div>
           </div>
