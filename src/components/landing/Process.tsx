@@ -5,23 +5,18 @@ import { useRef } from "react";
 const steps = [
   {
     n: "01",
-    title: "Consultation",
-    body: "We review your current billing process and identify gaps.",
+    title: "Strategy Call",
+    body: "We review your current billing, denials, and aged AR.",
   },
   {
     n: "02",
-    title: "Setup and Integration",
-    body: "We plug into your current workflow and systems.",
+    title: "System Sync",
+    body: "We integrate directly into your EHR — no disruption to your workflow.",
   },
   {
     n: "03",
-    title: "We Handle Billing",
-    body: "Claims, follow-ups, and denials are handled for you.",
-  },
-  {
-    n: "04",
-    title: "You Get Paid",
-    body: "Improved collections and predictable cash flow.",
+    title: "Live Recovery within 48–72 hours",
+    body: "We start working claims and recovering revenue fast.",
   },
 ];
 
@@ -40,11 +35,11 @@ export function Process() {
         <Reveal>
           <div className="max-w-2xl">
             <div className="eyebrow mb-6 [&::before]:bg-[var(--gold)] !text-primary-foreground/60">
-              How It Works
+              Our Process
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Four steps to{" "}
-              <span className="italic text-gradient-gold">predictable cash flow.</span>
+              Live recovery in{" "}
+              <span className="italic text-gradient-gold">48–72 hours.</span>
             </h2>
           </div>
         </Reveal>
@@ -71,7 +66,7 @@ export function Process() {
                         {s.n}
                       </div>
                       <h3 className="font-serif text-3xl md:text-4xl font-light mt-3">
-                        Step {parseInt(s.n)}: {s.title}
+                        {s.title}
                       </h3>
                     </div>
                     <div className={`pl-20 md:pl-0 ${right ? "md:order-1 md:pr-16 md:text-right" : "md:pl-16"}`}>

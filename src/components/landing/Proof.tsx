@@ -2,11 +2,10 @@ import { Reveal } from "./Reveal";
 import { BadgeCheck } from "lucide-react";
 
 const reasons = [
-  "Behavioral health billing specialists, not general billing",
-  "Consistent follow-up on unpaid claims",
-  "Clear communication and transparency",
-  "HIPAA-compliant processes",
-  "Reliable, detail-focused billing support",
+  "Performance-Based Pricing (aligned with collections)",
+  "No Long-Term Contracts",
+  "Work Inside Your EHR",
+  "Dedicated Billing Lead",
 ];
 
 export function Proof() {
@@ -15,10 +14,10 @@ export function Proof() {
       <div className="container-px mx-auto max-w-7xl">
         <Reveal>
           <div className="max-w-2xl">
-            <div className="eyebrow mb-6">Why Practices Choose MindLynx</div>
+            <div className="eyebrow mb-6">Why VeriFlow</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Built for behavioral health teams who can't afford{" "}
-              <span className="italic">guesswork.</span>
+              A billing partner aligned with{" "}
+              <span className="italic">your collections.</span>
             </h2>
           </div>
         </Reveal>

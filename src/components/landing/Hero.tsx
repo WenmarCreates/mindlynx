@@ -42,7 +42,7 @@ export function Hero() {
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--brand-teal)]" />
                   </span>
                   <span className="brand-badge-text">
-                    Behavioral Health Billing Specialists
+                    VeriFlow Billing Solutions
                   </span>
                 </div>
               </div>
@@ -54,11 +54,10 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif text-[clamp(2.5rem,6vw,4.75rem)] leading-[1.02] font-light text-foreground"
             >
-              Get Paid Faster.
+              Stop Losing Revenue to{" "}
+              <span className="italic font-normal text-gradient-gold">Denied Claims.</span>
               <br />
-              <span className="italic font-normal text-gradient-gold">Reduce Denials.</span>
-              <br />
-              <span className="text-[clamp(1.75rem,4vw,3rem)]">Increase Your Monthly Revenue.</span>
+              <span className="text-[clamp(1.75rem,4vw,3rem)]">Get Paid Faster.</span>
             </motion.h1>
 
             <motion.p
@@ -67,9 +66,9 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="mt-7 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
             >
-              MindLynx Billing Solutions helps behavioral health clinics increase
-              collections, reduce unpaid claims, and improve cash flow without adding
-              more work to your team.
+              VeriFlow Billing Solutions helps behavioral health clinics reduce denials,
+              recover aged claims, and improve cash flow — all while working inside your
+              current EHR.
             </motion.p>
 
             <motion.div
@@ -78,12 +77,12 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.45 }}
               className="mt-10 flex flex-wrap items-center gap-4"
             >
-              <a href="#offer" className="btn-primary group">
-                Book Consultation
+              <a href="tel:404-517-7041" className="btn-primary group">
+                Call: 404-517-7041
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
-              <a href="#problem" className="btn-ghost">
-                See Where You're Losing Revenue
+              <a href="#solution" className="btn-ghost">
+                Our Services
               </a>
             </motion.div>
 
@@ -94,13 +93,13 @@ export function Hero() {
               className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-muted-foreground"
             >
               <span className="inline-flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA-Compliant and Secure
+                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA Compliant
               </span>
               <span className="inline-flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Works With Your Current EHR
+                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Works Inside Your EHR
               </span>
               <span className="hidden md:inline-flex items-center gap-2">
-                Built for Mental Health and Substance Abuse Practices
+                No Long-Term Contracts
               </span>
             </motion.div>
           </div>
