@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logo from "@/assets/mindlynx-logo.png";
 
 export function Nav() {
   return (
