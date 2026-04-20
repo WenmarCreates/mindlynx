@@ -16,7 +16,7 @@ export function Problem() {
           <Reveal>
             <div className="eyebrow mb-6">We Work With</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Major payers,{" "}
+              Major&nbsp;payers,{" "}
               <span className="italic">covered.</span>
             </h2>
 

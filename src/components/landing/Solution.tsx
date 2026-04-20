@@ -33,7 +33,7 @@ export function Solution() {
             <div className="eyebrow mb-6">Our Services</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
               Built to recover revenue,{" "}
-              <span className="italic text-gradient-gold">end to end.</span>
+              <span className="italic text-gradient-gold">end&nbsp;to&nbsp;end.</span>
             </h2>
           </div>
         </Reveal>

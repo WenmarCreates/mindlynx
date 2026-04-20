@@ -17,7 +17,7 @@ export function Proof() {
             <div className="eyebrow mb-6">Why VeriFlow</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
               A billing partner aligned with{" "}
-              <span className="italic">your collections.</span>
+              <span className="italic">your&nbsp;collections.</span>
             </h2>
           </div>
         </Reveal>
