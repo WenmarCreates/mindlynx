@@ -12,11 +12,11 @@ export function Contact() {
           <Reveal className="lg:col-span-5 lg:sticky lg:top-32">
             <div className="eyebrow mb-6">Contact</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Let's talk about your{" "}
-              <span className="italic text-gradient-gold">billing.</span>
+              Let's improve your billing and{" "}
+              <span className="italic text-gradient-gold">increase your revenue.</span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-md">
-              Tell us about your practice and we'll be in touch shortly.
+              Tell us about your practice and we will reach out to discuss how we can help.
             </p>
 
             <div className="mt-10 space-y-4">
@@ -56,21 +56,21 @@ export function Contact() {
               ) : (
                 <>
                   <div className="grid sm:grid-cols-2 gap-5">
-                    <Field label="Full Name" name="name" required />
-                    <Field label="Practice Name" name="practice" />
-                    <Field label="Email" name="email" type="email" required />
-                    <Field label="Phone" name="phone" type="tel" />
+                    <Field label="Full Name" name="name" placeholder="Jane Doe" required />
+                    <Field label="Practice Name" name="practice" placeholder="Springfield Behavioral Health" />
+                    <Field label="Email" name="email" type="email" placeholder="jdoe@practice.com" required />
+                    <Field label="Phone" name="phone" type="tel" placeholder="(555) 555 5555" />
                   </div>
                   <div className="mt-5">
                     <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                      How can we help?
+                      What is your current EHR or biggest billing challenge?
                     </label>
                     <textarea
                       name="message"
                       rows={5}
-                      required
                       maxLength={1000}
-                      className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:border-foreground/40 focus:ring-4 focus:ring-[var(--gold)]/15 transition"
+                      placeholder="E.g. SimplePractice, high denials, unpaid claims"
+                      className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:border-foreground/40 focus:ring-4 focus:ring-[var(--gold)]/15 transition placeholder:text-muted-foreground/60"
                     />
                   </div>
                   <button type="submit" className="btn-primary mt-8 w-full sm:w-auto group">
@@ -92,11 +92,13 @@ function Field({
   name,
   type = "text",
   required = false,
+  placeholder,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
+  placeholder?: string;
 }) {
   return (
     <label className="block">
@@ -109,7 +111,8 @@ function Field({
         name={name}
         required={required}
         maxLength={255}
-        className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:border-foreground/40 focus:ring-4 focus:ring-[var(--gold)]/15 transition"
+        placeholder={placeholder}
+        className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:border-foreground/40 focus:ring-4 focus:ring-[var(--gold)]/15 transition placeholder:text-muted-foreground/60"
       />
     </label>
   );
