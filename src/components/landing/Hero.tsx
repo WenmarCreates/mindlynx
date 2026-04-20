@@ -96,10 +96,10 @@ export function Hero() {
               className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-muted-foreground"
             >
               <span className="inline-flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA Compliant and Secure
+                <ShieldCheck className="h-4 w-4 text-[var(--gold)] shrink-0" /> HIPAA Compliant and Secure
               </span>
               <span className="inline-flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Direct EHR Integration, No Migration Required
+                <Sparkles className="h-4 w-4 text-[var(--gold)] shrink-0" /> Direct EHR Integration, No Migration Required
               </span>
               <span className="inline-flex items-center gap-2">
                 <Stethoscope className="h-4 w-4 text-[var(--gold)] shrink-0" /> Specialized Behavioral Health Coding
