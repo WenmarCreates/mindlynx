@@ -6,7 +6,7 @@ const points = [
   "Claims sitting unpaid for weeks or months",
   "Insurance denials slowing down cash flow",
   "Staff spending hours on billing instead of patients",
-  "Revenue slipping silently through the cracks",
+  "Revenue slipping through the cracks",
 ];
 
 export function Problem() {
@@ -17,13 +17,12 @@ export function Problem() {
           <Reveal>
             <div className="eyebrow mb-6">The Hidden Leak</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Billing issues are costing you more than{" "}
-              <span className="italic">you think.</span>
+              Billing Issues Are Costing You{" "}
+              <span className="italic">More Than You Think.</span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed max-w-lg">
-              When billing isn't handled correctly, your practice quietly loses revenue
-              every single month. The damage compounds — and it rarely shows up on a
-              single line of your P&L.
+              If your billing isn't handled correctly, your practice is losing money
+              every single month.
             </p>
 
             <ul className="mt-10 space-y-4">
@@ -56,12 +55,6 @@ export function Problem() {
                   loading="lazy"
                   className="w-full h-auto"
                 />
-              </div>
-              <div className="absolute -bottom-8 -right-4 md:-right-8 glass rounded-2xl p-6 shadow-soft max-w-xs">
-                <div className="font-serif text-4xl">$74k</div>
-                <div className="text-xs text-muted-foreground mt-1">
-                  average annual revenue recovered for new clients in their first 12 months
-                </div>
               </div>
             </div>
           </Reveal>

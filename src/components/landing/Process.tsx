@@ -6,22 +6,22 @@ const steps = [
   {
     n: "01",
     title: "Consultation",
-    body: "We review your current billing process and surface the leaks costing you revenue today.",
+    body: "We review your current billing process and identify gaps.",
   },
   {
     n: "02",
-    title: "Setup & Integration",
-    body: "We plug into your existing workflow and EHR with zero disruption to your team.",
+    title: "Setup and Integration",
+    body: "We plug into your current workflow and systems.",
   },
   {
     n: "03",
     title: "We Handle Billing",
-    body: "Claims, follow-ups, denials, and A/R — all managed by behavioral health specialists.",
+    body: "Claims, follow-ups, and denials are handled for you.",
   },
   {
     n: "04",
     title: "You Get Paid",
-    body: "Improved collections, fewer denials, and predictable monthly cash flow.",
+    body: "Improved collections and predictable cash flow.",
   },
 ];
 
@@ -43,15 +43,13 @@ export function Process() {
               How It Works
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Four steps from{" "}
-              <span className="italic text-gradient-gold">leaking revenue</span> to
-              predictable cash flow.
+              Four steps to{" "}
+              <span className="italic text-gradient-gold">predictable cash flow.</span>
             </h2>
           </div>
         </Reveal>
 
         <div ref={ref} className="mt-20 relative">
-          {/* timeline line */}
           <div className="absolute left-8 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-px bg-primary-foreground/10" />
           <motion.div
             style={{ height: lineHeight }}
@@ -64,7 +62,6 @@ export function Process() {
               return (
                 <Reveal key={s.n} delay={0.05}>
                   <div className="relative grid md:grid-cols-2 gap-8 items-center">
-                    {/* dot */}
                     <div className="absolute left-8 md:left-1/2 md:-translate-x-1/2 -translate-y-1/2 top-1/2">
                       <div className="h-4 w-4 rounded-full bg-[var(--gold)] ring-8 ring-primary" />
                     </div>
@@ -74,7 +71,7 @@ export function Process() {
                         {s.n}
                       </div>
                       <h3 className="font-serif text-3xl md:text-4xl font-light mt-3">
-                        {s.title}
+                        Step {parseInt(s.n)}: {s.title}
                       </h3>
                     </div>
                     <div className={`pl-20 md:pl-0 ${right ? "md:order-1 md:pr-16 md:text-right" : "md:pl-16"}`}>
