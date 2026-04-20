@@ -54,16 +54,14 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif font-light text-foreground"
             >
-              <span className="block text-[clamp(2.25rem,5.5vw,4.5rem)] leading-[0.95] tracking-tight">
-                Stop Losing
+              <span className="block text-[clamp(2rem,5vw,4rem)] leading-[1.02] tracking-tight">
+                Stop Losing&nbsp;Revenue.
               </span>
-              <span className="mt-2 block text-[clamp(2.25rem,5.5vw,4.5rem)] leading-[0.95] tracking-tight italic font-normal text-gradient-gold">
-                Revenue.
+              <span className="mt-3 block text-[clamp(2rem,5vw,4rem)] leading-[1.02] tracking-tight italic font-normal text-gradient-gold">
+                Get Paid&nbsp;Faster.
               </span>
-              <span className="mt-5 flex items-center gap-4 text-[clamp(1rem,1.6vw,1.4rem)] uppercase tracking-[0.32em] text-muted-foreground font-sans">
-                <span className="h-px flex-1 bg-foreground/15 max-w-[80px]" />
-                <span>Get&nbsp;Paid&nbsp;Faster</span>
-                <span className="h-px flex-1 bg-foreground/15" />
+              <span className="mt-5 block text-[clamp(1.15rem,2vw,1.6rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light">
+                Reduce Denials and Recover Unpaid&nbsp;Claims.
               </span>
             </motion.h1>
 
