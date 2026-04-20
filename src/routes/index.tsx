@@ -3,7 +3,7 @@ import { Nav } from "@/components/landing/Nav";
 import { Hero } from "@/components/landing/Hero";
 import { Problem } from "@/components/landing/Problem";
 import { Solution } from "@/components/landing/Solution";
-import { Benefits } from "@/components/landing/Benefits";
+
 import { Process } from "@/components/landing/Process";
 import { Proof } from "@/components/landing/Proof";
 import { Offer } from "@/components/landing/Offer";
@@ -22,7 +22,6 @@ function Index() {
       <Hero />
       <Problem />
       <Solution />
-      <Benefits />
       <Process />
       <Proof />
       <Offer />
