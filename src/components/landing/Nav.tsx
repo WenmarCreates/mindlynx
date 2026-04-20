@@ -53,10 +53,10 @@ export function Nav() {
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#solution" className="hover:text-foreground transition">Services</a>
             <a href="#process" className="hover:text-foreground transition">Process</a>
-            <a href="#proof" className="hover:text-foreground transition">Why Us</a>
-            <a href="#offer" className="hover:text-foreground transition">Review</a>
+            <a href="#proof" className="hover:text-foreground transition">Why VeriFlow</a>
+            <a href="#offer" className="hover:text-foreground transition">HIPAA</a>
           </nav>
-          <a href="#offer" className="btn-primary !py-2.5 !px-5 text-xs">Book Consultation</a>
+          <a href="tel:404-517-7041" className="btn-primary !py-2.5 !px-5 text-xs">Call: 404-517-7041</a>
         </motion.div>
       </motion.div>
     </motion.header>
