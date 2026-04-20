@@ -78,13 +78,13 @@ export function Hero() {
               initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.45 }}
-              className="mt-10 flex flex-wrap items-center gap-4"
+              className="mt-10 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-4"
             >
-              <a href="#contact" className="btn-primary group">
+              <a href="#contact" className="btn-primary group w-full sm:w-auto">
                 Book a Consultation
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
-              <a href="tel:404-517-7041" className="btn-ghost">
+              <a href="tel:404-517-7041" className="btn-ghost w-full sm:w-auto">
                 Call&nbsp;404-517-7041
               </a>
             </motion.div>
