@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowRight, ShieldCheck, Sparkles, Stethoscope } from "lucide-react";
 import heroMockup from "@/assets/hero-mockup.jpg";
 
 export function Hero() {
@@ -102,7 +102,7 @@ export function Hero() {
                 <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Direct EHR Integration, No Migration Required
               </span>
               <span className="hidden md:inline-flex items-center gap-2">
-                Specialized Behavioral Health Coding
+                <Stethoscope className="h-4 w-4 text-[var(--gold)]" /> Specialized Behavioral Health Coding
               </span>
             </motion.div>
           </div>
