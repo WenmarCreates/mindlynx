@@ -2,11 +2,10 @@ import { Reveal } from "./Reveal";
 import { Check } from "lucide-react";
 
 const benefits = [
-  "Faster payments from insurance companies",
-  "Fewer denied or rejected claims",
-  "Improved monthly cash flow",
-  "Less stress on your team",
-  "More time focused on patient care",
+  "Performance-Based Pricing (aligned with collections)",
+  "No Long-Term Contracts",
+  "Work Inside Your EHR",
+  "Dedicated Billing Lead",
 ];
 
 export function Benefits() {
@@ -15,16 +14,16 @@ export function Benefits() {
       <div className="container-px mx-auto max-w-7xl">
         <Reveal>
           <div className="max-w-2xl">
-            <div className="eyebrow mb-6">What You Can Expect</div>
+            <div className="eyebrow mb-6">Why VeriFlow</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              The transformation,
+              Built around how you
               <br />
-              <span className="italic">in plain terms.</span>
+              <span className="italic">already work.</span>
             </h2>
           </div>
         </Reveal>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-3xl overflow-hidden border border-border">
+        <div className="mt-16 grid sm:grid-cols-2 gap-px bg-border rounded-3xl overflow-hidden border border-border">
           {benefits.map((b, i) => (
             <Reveal key={b} delay={i * 0.05}>
               <div className="bg-background h-full p-10 transition-colors duration-500 hover:bg-[var(--cream)]">
