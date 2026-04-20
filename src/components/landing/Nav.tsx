@@ -56,7 +56,7 @@ export function Nav() {
             <a href="#proof" className="hover:text-foreground transition">Why VeriFlow</a>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </nav>
-          <a href="#contact" className="btn-primary !py-2.5 !px-5 text-xs">Contact Us</a>
+          <a href="#contact" className="btn-primary !py-2.5 !px-5 text-xs">Book a Consultation</a>
         </motion.div>
       </motion.div>
     </motion.header>
