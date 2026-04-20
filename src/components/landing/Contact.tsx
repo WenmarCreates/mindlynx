@@ -167,8 +167,18 @@ export function Contact() {
                     />
                   </div>
 
-                  <button type="submit" className="btn-primary mt-8 w-full sm:w-auto group">
-                    Submit
+                  {error && (
+                    <p className="mt-6 text-sm text-red-600" role="alert">
+                      {error}
+                    </p>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={submitting}
+                    className="btn-primary mt-8 w-full sm:w-auto group disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    {submitting ? "Sending…" : "Submit"}
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </>
