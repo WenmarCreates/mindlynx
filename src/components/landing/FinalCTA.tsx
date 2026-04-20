@@ -11,10 +11,8 @@ export function FinalCTA() {
           <div className="eyebrow mb-6 [&::before]:bg-[var(--gold)] !text-primary-foreground/60 justify-center inline-flex">
             Contact
           </div>
-          <h2 className="font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[1.02] font-light">
-            Stop Losing Revenue to
-            <br />
-            <span className="italic text-gradient-gold">Denied Claims.</span>
+          <h2 className="font-serif text-[clamp(1.5rem,4vw,3.25rem)] leading-[1.1] font-light whitespace-nowrap">
+            Stop Losing Revenue to <span className="italic text-gradient-gold">Denied Claims.</span>
           </h2>
         </Reveal>
         <Reveal delay={0.25}>
