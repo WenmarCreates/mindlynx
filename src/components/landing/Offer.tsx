@@ -20,7 +20,7 @@ export function Offer() {
                 <ShieldCheck className="h-6 w-6" />
               </div>
               <p className="font-serif text-2xl md:text-3xl font-light leading-snug text-foreground">
-                We use secure systems and strict protocols to protect patient data.
+                Security is built into every layer of our process. We utilize enterprise-grade encryption and strict HIPAA-compliant protocols to ensure your data remains private, secure, and accessible only to authorized users.
               </p>
             </div>
           </Reveal>
