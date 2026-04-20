@@ -44,7 +44,7 @@ export default function HeroParticles() {
       dpr={[1, 1.5]}
       camera={{ position: [0, 0, 6], fov: 50 }}
       gl={{ antialias: true, alpha: true }}
-      style={{ pointerEvents: "none" }}
+      style={{ width: "100%", height: "100%", pointerEvents: "none" }}
     >
       <Suspense fallback={null}>
         <ambientLight intensity={0.6} />

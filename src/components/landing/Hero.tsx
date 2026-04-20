@@ -17,7 +17,10 @@ export function Hero() {
     <section id="top" className="relative pt-36 md:pt-44 pb-24 md:pb-32 overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-grid opacity-60" />
       {mounted && (
-        <div className="absolute inset-0 -z-10 opacity-70 pointer-events-none">
+        <div
+          className="absolute inset-0 -z-10 h-full w-full min-h-full opacity-70 pointer-events-none"
+          aria-hidden
+        >
           <Suspense fallback={null}>
             <HeroParticles />
           </Suspense>
