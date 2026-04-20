@@ -48,7 +48,7 @@ export function Hero() {
               <br />
               <span className="italic font-normal text-gradient-gold">Reduce Denials.</span>
               <br />
-              Increase Your Monthly Revenue.
+              <span className="text-[clamp(1.75rem,4vw,3rem)]">Increase Your Monthly Revenue.</span>
             </motion.h1>
 
             <motion.p
