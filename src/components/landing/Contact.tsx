@@ -96,10 +96,7 @@ export function Contact() {
 
           <Reveal delay={0.15} className="lg:col-span-7">
             <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
+              onSubmit={handleSubmit}
               className="rounded-3xl bg-card border border-border p-8 md:p-12 shadow-elegant"
             >
               {submitted ? (
