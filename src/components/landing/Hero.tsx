@@ -30,7 +30,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           <div className="lg:col-span-7">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
               className="mb-6 inline-flex"
@@ -49,7 +49,7 @@ export function Hero() {
             </motion.div>
 
             <motion.h1
-              initial={{ opacity: 0, y: 30 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif text-[clamp(1.5rem,4vw,3.25rem)] leading-[1.1] font-light text-foreground whitespace-nowrap"
@@ -61,7 +61,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               className="mt-7 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
@@ -72,7 +72,7 @@ export function Hero() {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.45 }}
               className="mt-10 flex flex-wrap items-center gap-4"
@@ -87,7 +87,7 @@ export function Hero() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0 }}
+              initial={false}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
               className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-muted-foreground"
@@ -105,7 +105,7 @@ export function Hero() {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95, y: 40 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="lg:col-span-5 relative"

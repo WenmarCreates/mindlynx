@@ -17,7 +17,7 @@ export function Reveal({
 }) {
   return (
     <motion.div
-      initial="hidden"
+      initial={false}
       whileInView="show"
       viewport={{ once: true, margin: "-80px" }}
       variants={variants}
