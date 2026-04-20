@@ -52,9 +52,10 @@ export function Solution() {
         <Reveal>
           <div className="max-w-3xl">
             <div className="eyebrow mb-6">Built for Behavioral Health Billing</div>
-            <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              <span className="whitespace-nowrap">You don't need a generic billing company.</span>
-              <br />
+            <h2 className="font-serif text-[clamp(1.25rem,3.6vw,3rem)] leading-[1.1] font-light whitespace-nowrap">
+              You don't need a generic billing company.
+            </h2>
+            <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light mt-2">
               <span className="italic text-gradient-gold">You need a specialist.</span>
             </h2>
             <p className="mt-6 text-muted-foreground text-lg max-w-2xl">
