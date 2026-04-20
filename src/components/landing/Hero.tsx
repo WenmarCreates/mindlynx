@@ -52,12 +52,13 @@ export function Hero() {
               initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="font-serif text-[clamp(1.5rem,4vw,3.25rem)] leading-[1.1] font-light text-foreground whitespace-nowrap"
+              className="font-serif text-[clamp(1.5rem,4vw,3.25rem)] leading-[1.1] font-light text-foreground"
             >
-              Stop Losing Revenue to{" "}
-              <span className="italic font-normal text-gradient-gold">Denied Claims.</span>
+              Stop Losing
               <br />
-              <span className="text-[clamp(1.25rem,3vw,2.25rem)] whitespace-normal">Get Paid Faster.</span>
+              <span className="italic font-normal text-gradient-gold">Revenue to Denied Claims.</span>
+              <br />
+              <span className="text-[clamp(1.25rem,3vw,2.25rem)]">Get Paid Faster.</span>
             </motion.h1>
 
             <motion.p
