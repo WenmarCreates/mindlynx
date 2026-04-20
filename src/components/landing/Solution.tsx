@@ -53,7 +53,7 @@ export function Solution() {
           <div className="max-w-3xl">
             <div className="eyebrow mb-6">Built for Behavioral Health Billing</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              You don't need a generic billing company.
+              <span className="whitespace-nowrap">You don't need a generic billing company.</span>
               <br />
               <span className="italic text-gradient-gold">You need a specialist.</span>
             </h2>
