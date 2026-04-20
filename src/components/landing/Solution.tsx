@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { TiltCard } from "./TiltCard";
 import { ClipboardCheck, FileCheck2, RefreshCcw, Search, Workflow } from "lucide-react";
 
 const specialties = [
