@@ -41,7 +41,7 @@ export function Hero() {
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--brand-teal)] opacity-75" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--brand-teal)]" />
                   </span>
-                  <span className="brand-badge-text whitespace-nowrap text-[9px] sm:text-[11px]">
+                  <span className="brand-badge-text whitespace-nowrap !text-[8px] !tracking-[0.14em] sm:!text-[11px] sm:!tracking-[0.22em]">
                     Behavioral Health Billing Specialists
                   </span>
                 </div>
