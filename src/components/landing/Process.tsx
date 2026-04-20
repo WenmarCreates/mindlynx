@@ -39,7 +39,7 @@ export function Process() {
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
               Live recovery in{" "}
-              <span className="italic text-gradient-gold">48–72 hours.</span>
+              <span className="italic text-gradient-gold">48–72&nbsp;hours.</span>
             </h2>
           </div>
         </Reveal>

@@ -9,7 +9,7 @@ export function Offer() {
           <Reveal className="lg:col-span-5 lg:sticky lg:top-32">
             <div className="eyebrow mb-6">HIPAA Compliant</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Your patient data,{" "}
+              Your patient&nbsp;data,{" "}
               <span className="italic text-gradient-gold">protected.</span>
             </h2>
           </Reveal>

@@ -27,13 +27,13 @@ export function Hero() {
       </motion.div>
 
       <div className="container-px mx-auto max-w-7xl">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           <div className="lg:col-span-7">
             <motion.div
               initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="mb-6 inline-flex"
+              className="mb-8 inline-flex"
             >
               <div className="brand-badge">
                 <div className="brand-badge-inner">
@@ -52,24 +52,30 @@ export function Hero() {
               initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="font-serif text-[clamp(1.5rem,4vw,3.25rem)] leading-[1.1] font-light text-foreground"
+              className="font-serif font-light text-foreground"
             >
-              Stop Losing
-              <br />
-              <span className="italic font-normal text-gradient-gold">Revenue to Denied Claims.</span>
-              <br />
-              <span className="text-[clamp(1.25rem,3vw,2.25rem)]">Get Paid Faster.</span>
+              <span className="block text-[clamp(2.25rem,5.5vw,4.5rem)] leading-[0.95] tracking-tight">
+                Stop Losing
+              </span>
+              <span className="mt-2 block text-[clamp(2.25rem,5.5vw,4.5rem)] leading-[0.95] tracking-tight italic font-normal text-gradient-gold">
+                Revenue.
+              </span>
+              <span className="mt-5 flex items-center gap-4 text-[clamp(1rem,1.6vw,1.4rem)] uppercase tracking-[0.32em] text-muted-foreground font-sans">
+                <span className="h-px flex-1 bg-foreground/15 max-w-[80px]" />
+                <span>Get&nbsp;Paid&nbsp;Faster</span>
+                <span className="h-px flex-1 bg-foreground/15" />
+              </span>
             </motion.h1>
 
             <motion.p
               initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="mt-7 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
+              className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
             >
-              VeriFlow Billing Solutions helps behavioral health clinics reduce denials,
-              recover aged claims, and improve cash flow — all while working inside your
-              current EHR.
+              VeriFlow Billing Solutions helps behavioral health clinics reduce
+              denials, recover aged claims, and improve cash&nbsp;flow — all while
+              working inside your current&nbsp;EHR.
             </motion.p>
 
             <motion.div
@@ -79,11 +85,11 @@ export function Hero() {
               className="mt-10 flex flex-wrap items-center gap-4"
             >
               <a href="#contact" className="btn-primary group">
-                Contact Us
+                Contact&nbsp;Us
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a href="tel:404-517-7041" className="btn-ghost">
-                Call: 404-517-7041
+                Call:&nbsp;404-517-7041
               </a>
             </motion.div>
 
@@ -94,13 +100,13 @@ export function Hero() {
               className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-muted-foreground"
             >
               <span className="inline-flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA Compliant
+                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA&nbsp;Compliant
               </span>
               <span className="inline-flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Works Inside Your EHR
+                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Works Inside Your&nbsp;EHR
               </span>
               <span className="hidden md:inline-flex items-center gap-2">
-                No Long-Term Contracts
+                No Long-Term&nbsp;Contracts
               </span>
             </motion.div>
           </div>

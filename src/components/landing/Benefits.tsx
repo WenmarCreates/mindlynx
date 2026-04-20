@@ -16,9 +16,8 @@ export function Benefits() {
           <div className="max-w-2xl">
             <div className="eyebrow mb-6">Why VeriFlow</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Built around how you
-              <br />
-              <span className="italic">already work.</span>
+              Built around{" "}
+              <span className="italic">how you already&nbsp;work.</span>
             </h2>
           </div>
         </Reveal>
