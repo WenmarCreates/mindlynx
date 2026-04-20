@@ -6,7 +6,7 @@ import { Solution } from "@/components/landing/Solution";
 import { Benefits } from "@/components/landing/Benefits";
 import { Process } from "@/components/landing/Process";
 import { Proof } from "@/components/landing/Proof";
-import { Payers } from "@/components/landing/Payers";
+
 import { Offer } from "@/components/landing/Offer";
 import { Contact } from "@/components/landing/Contact";
 import { FinalCTA } from "@/components/landing/FinalCTA";
@@ -25,9 +25,8 @@ function Index() {
       <Solution />
       <Benefits />
       <Process />
-      <Proof />
-      <Payers />
-      <Offer />
+        <Proof />
+        <Offer />
       <Contact />
       <FinalCTA />
       <Footer />
