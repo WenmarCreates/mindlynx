@@ -29,14 +29,13 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "MindLynx Billing Solutions — Behavioral Health Billing Specialists" },
+      { name: "description", content: "Get paid faster, reduce denials, and increase monthly revenue. Specialist behavioral health billing for mental health, therapy, and substance abuse practices." },
+      { name: "author", content: "MindLynx Billing Solutions" },
+      { property: "og:title", content: "MindLynx Billing Solutions — Behavioral Health Billing Specialists" },
+      { property: "og:description", content: "Get paid faster. Reduce denials. Increase your monthly revenue." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
