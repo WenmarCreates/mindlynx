@@ -12,10 +12,7 @@ export function Nav() {
       <div className="container-px mx-auto max-w-7xl pt-5">
         <div className="glass rounded-full flex items-center justify-between pl-6 pr-2 py-2 shadow-soft">
           <a href="#top" className="flex items-center gap-2">
-            <span className="h-7 w-7 rounded-full bg-primary grid place-items-center">
-              <span className="h-2 w-2 rounded-full bg-[var(--gold)]" />
-            </span>
-            <span className="font-serif text-lg tracking-tight">MindLynx</span>
+            <img src={logo} alt="MindLynx" className="h-8 w-auto" />
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#solution" className="hover:text-foreground transition">Services</a>
