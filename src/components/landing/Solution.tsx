@@ -82,16 +82,18 @@ export function Solution() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 0.07}>
-              <div className="group h-full relative rounded-2xl bg-card border border-border p-7 transition-all duration-500 hover:-translate-y-1 hover:shadow-elegant hover:border-foreground/10">
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[var(--gold)]/0 to-[var(--gold)]/0 group-hover:from-[var(--gold)]/8 group-hover:to-transparent transition-all duration-500 -z-0" />
-                <div className="relative">
-                  <div className="h-12 w-12 rounded-xl bg-primary text-primary-foreground grid place-items-center mb-6 transition-transform duration-500 group-hover:rotate-[-4deg]">
-                    <s.icon className="h-5 w-5" />
+              <TiltCard className="h-full">
+                <div className="group h-full relative rounded-2xl bg-card border border-border p-7 overflow-hidden transition-[box-shadow,border-color] duration-500 hover:shadow-elegant hover:border-[var(--brand-teal)]/40">
+                  <div className="absolute -inset-px rounded-2xl bg-[linear-gradient(120deg,transparent,oklch(0.72_0.12_210/0.25),transparent)] bg-[length:200%_100%] opacity-0 group-hover:opacity-100 group-hover:animate-[shimmer_2.5s_linear_infinite] -z-0" />
+                  <div className="relative">
+                    <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[var(--brand-indigo)] to-[var(--brand-teal)] text-primary-foreground grid place-items-center mb-6 transition-transform duration-500 group-hover:rotate-[-6deg] group-hover:scale-110 shadow-[0_8px_24px_-8px_oklch(0.32_0.15_280/0.5)]">
+                      <s.icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="font-serif text-2xl mb-3">{s.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{s.body}</p>
                   </div>
-                  <h3 className="font-serif text-2xl mb-3">{s.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{s.body}</p>
                 </div>
-              </div>
+              </TiltCard>
             </Reveal>
           ))}
         </div>
