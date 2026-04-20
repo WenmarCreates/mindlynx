@@ -78,12 +78,12 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.45 }}
               className="mt-10 flex flex-wrap items-center gap-4"
             >
-              <a href="tel:404-517-7041" className="btn-primary group">
-                Call: 404-517-7041
+              <a href="#contact" className="btn-primary group">
+                Contact Us
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
-              <a href="#solution" className="btn-ghost">
-                Our Services
+              <a href="tel:404-517-7041" className="btn-ghost">
+                Call: 404-517-7041
               </a>
             </motion.div>
 
