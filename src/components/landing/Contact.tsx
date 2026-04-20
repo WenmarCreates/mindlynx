@@ -2,8 +2,25 @@ import { Reveal } from "./Reveal";
 import { ArrowRight, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
+const HELP_OPTIONS = [
+  "Reduce denials & increase collections",
+  "Insurance verification (VOB) support",
+  "Faster claim submissions & payments",
+  "Recover unpaid or aging claims",
+  "Billing support within your current EHR",
+  "Help scaling your clinic operations",
+  "Not sure yet — just exploring",
+];
+
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [selected, setSelected] = useState<string[]>([]);
+
+  const toggle = (option: string) => {
+    setSelected((prev) =>
+      prev.includes(option) ? prev.filter((o) => o !== option) : [...prev, option],
+    );
+  };
 
   return (
     <section id="contact" className="py-28 md:py-36 bg-[var(--cream)]">
@@ -56,25 +73,66 @@ export function Contact() {
               ) : (
                 <>
                   <div className="grid sm:grid-cols-2 gap-5">
-                    <Field label="Full Name" name="name" placeholder="Jane Doe" required />
-                    <Field label="Practice Name" name="practice" placeholder="Springfield Behavioral Health" />
-                    <Field label="Email" name="email" type="email" placeholder="jdoe@practice.com" required />
-                    <Field label="Phone" name="phone" type="tel" placeholder="(555) 555 5555" />
+                    <Field label="Full Name" name="name" required />
+                    <Field label="Practice / Clinic Name" name="practice" />
+                    <Field label="Email Address" name="email" type="email" required />
+                    <Field
+                      label="Phone Number"
+                      name="phone"
+                      type="tel"
+                      required
+                      placeholder="(555) 123-4567"
+                    />
                   </div>
-                  <div className="mt-5">
+
+                  <div className="mt-8">
+                    <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-4">
+                      What can we help you with?
+                    </label>
+                    <div className="grid sm:grid-cols-2 gap-3">
+                      {HELP_OPTIONS.map((option) => {
+                        const checked = selected.includes(option);
+                        return (
+                          <label
+                            key={option}
+                            className={`flex items-start gap-3 rounded-xl border px-4 py-3 cursor-pointer transition ${
+                              checked
+                                ? "border-[var(--gold)]/60 bg-[var(--gold)]/5"
+                                : "border-border hover:border-foreground/20"
+                            }`}
+                          >
+                            <input
+                              type="checkbox"
+                              name="help[]"
+                              value={option}
+                              checked={checked}
+                              onChange={() => toggle(option)}
+                              className="mt-0.5 h-4 w-4 rounded border-border accent-[var(--gold)] cursor-pointer"
+                            />
+                            <span className="text-sm text-foreground/85 leading-snug">
+                              {option}
+                            </span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  <div className="mt-6">
                     <label className="block text-xs uppercase tracking-widest text-muted-foreground mb-2">
-                      What is your current EHR or biggest billing challenge?
+                      Message
                     </label>
                     <textarea
                       name="message"
                       rows={5}
                       maxLength={1000}
-                      placeholder="E.g. SimplePractice, high denials, unpaid claims"
+                      placeholder="Tell us a bit more about your practice and goals…"
                       className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm focus:outline-none focus:border-foreground/40 focus:ring-4 focus:ring-[var(--gold)]/15 transition placeholder:text-muted-foreground/60"
                     />
                   </div>
+
                   <button type="submit" className="btn-primary mt-8 w-full sm:w-auto group">
-                    Send Message
+                    Submit
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </>
