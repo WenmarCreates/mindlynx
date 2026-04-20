@@ -70,37 +70,42 @@
 :root {
   --radius: 0.75rem;
 
-  /* Premium palette: deep navy ink, warm cream, soft gold */
-  --background: oklch(0.985 0.008 85);
-  --foreground: oklch(0.18 0.03 255);
+  /* Brand palette derived from MindLynx logo: deep indigo, navy, teal-cyan */
+  --background: oklch(0.985 0.005 230);
+  --foreground: oklch(0.22 0.08 270);
 
-  --ink: oklch(0.18 0.03 255);
-  --cream: oklch(0.97 0.014 85);
-  --gold: oklch(0.74 0.13 70);
+  --ink: oklch(0.22 0.08 270);
+  --cream: oklch(0.97 0.01 220);
+  /* "gold" token retained for backward-compat — now mapped to brand teal accent */
+  --gold: oklch(0.72 0.12 210);
+  --brand-indigo: oklch(0.32 0.15 280);
+  --brand-navy: oklch(0.30 0.12 260);
+  --brand-teal: oklch(0.72 0.12 210);
+  --brand-teal-soft: oklch(0.82 0.08 205);
 
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.03 255);
+  --card-foreground: oklch(0.22 0.08 270);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.03 255);
+  --popover-foreground: oklch(0.22 0.08 270);
 
-  --primary: oklch(0.22 0.04 255);
-  --primary-foreground: oklch(0.97 0.014 85);
+  --primary: oklch(0.30 0.13 270);
+  --primary-foreground: oklch(0.97 0.01 220);
 
-  --secondary: oklch(0.95 0.012 85);
-  --secondary-foreground: oklch(0.22 0.04 255);
+  --secondary: oklch(0.95 0.015 220);
+  --secondary-foreground: oklch(0.30 0.13 270);
 
-  --muted: oklch(0.95 0.012 85);
-  --muted-foreground: oklch(0.48 0.02 255);
+  --muted: oklch(0.95 0.015 220);
+  --muted-foreground: oklch(0.50 0.04 260);
 
-  --accent: oklch(0.74 0.13 70);
-  --accent-foreground: oklch(0.18 0.03 255);
+  --accent: oklch(0.72 0.12 210);
+  --accent-foreground: oklch(0.22 0.08 270);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.9 0.012 85);
-  --input: oklch(0.9 0.012 85);
-  --ring: oklch(0.74 0.13 70);
+  --border: oklch(0.9 0.015 220);
+  --input: oklch(0.9 0.015 220);
+  --ring: oklch(0.72 0.12 210);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
