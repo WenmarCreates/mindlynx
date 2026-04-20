@@ -42,7 +42,7 @@ export function Hero() {
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--brand-teal)]" />
                   </span>
                   <span className="brand-badge-text">
-                    VeriFlow Billing Solutions
+                    Behavioral Health Billing Specialists
                   </span>
                 </div>
               </div>
@@ -60,9 +60,6 @@ export function Hero() {
               <span className="mt-3 block whitespace-nowrap text-[clamp(1.85rem,4.4vw,3.5rem)] leading-[1.05] tracking-tight italic font-normal text-gradient-gold">
                 Get Paid Faster.
               </span>
-              <span className="mt-6 block text-[clamp(1.4rem,2.4vw,2rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light">
-                Reduce Denials and Recover Unpaid&nbsp;Claims.
-              </span>
             </motion.h1>
 
             <motion.p
@@ -71,9 +68,9 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
             >
-              VeriFlow Billing Solutions helps behavioral health clinics reduce
-              denials, recover unpaid claims, and improve cash flow without
-              changing your current&nbsp;EHR.
+              VeriFlow Billing Solutions helps behavioral health clinics recover
+              lost revenue, increase collections, and reduce denials without
+              changing their current EHR or disrupting daily&nbsp;operations.
             </motion.p>
 
             <motion.div
@@ -83,11 +80,11 @@ export function Hero() {
               className="mt-10 flex flex-wrap items-center gap-4"
             >
               <a href="#contact" className="btn-primary group">
-                Contact&nbsp;Us
+                Book a Consultation
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a href="tel:404-517-7041" className="btn-ghost">
-                Call:&nbsp;404-517-7041
+                Call&nbsp;404-517-7041
               </a>
             </motion.div>
 
@@ -98,13 +95,13 @@ export function Hero() {
               className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs text-muted-foreground"
             >
               <span className="inline-flex items-center gap-2">
-                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA&nbsp;Compliant
+                <ShieldCheck className="h-4 w-4 text-[var(--gold)]" /> HIPAA Compliant &amp;&nbsp;Secure
               </span>
               <span className="inline-flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Works Inside Your&nbsp;EHR
+                <Sparkles className="h-4 w-4 text-[var(--gold)]" /> Direct EHR Integration, No Migration&nbsp;Required
               </span>
               <span className="hidden md:inline-flex items-center gap-2">
-                No Long-Term&nbsp;Contracts
+                Specialized Behavioral Health&nbsp;Coding
               </span>
             </motion.div>
           </div>

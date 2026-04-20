@@ -2,10 +2,22 @@ import { Reveal } from "./Reveal";
 import { Check } from "lucide-react";
 
 const benefits = [
-  "Performance-Based Pricing (aligned with collections)",
-  "No Long-Term Contracts",
-  "Work Inside Your EHR",
-  "Dedicated Billing Lead",
+  {
+    title: "Performance Based Pricing aligned with collections",
+    body: "Our success is tied directly to yours, so we focus on results that matter.",
+  },
+  {
+    title: "No Long Term Contracts",
+    body: "Stay because it works, not because you are locked in.",
+  },
+  {
+    title: "Work Inside Your EHR",
+    body: "No disruption, no transitions, just immediate impact within your system.",
+  },
+  {
+    title: "Dedicated Account Manager",
+    body: "A focused expert managing your billing and driving performance.",
+  },
 ];
 
 export function Benefits() {
@@ -16,21 +28,24 @@ export function Benefits() {
           <div className="max-w-2xl">
             <div className="eyebrow mb-6">Why VeriFlow</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Built around{" "}
-              <span className="italic">how you already&nbsp;work.</span>
+              A billing partner built around{" "}
+              <span className="italic">your&nbsp;revenue.</span>
             </h2>
           </div>
         </Reveal>
 
         <div className="mt-16 grid sm:grid-cols-2 gap-px bg-border rounded-3xl overflow-hidden border border-border">
           {benefits.map((b, i) => (
-            <Reveal key={b} delay={i * 0.05}>
+            <Reveal key={b.title} delay={i * 0.05}>
               <div className="bg-background h-full p-10 transition-colors duration-500 hover:bg-[var(--cream)]">
                 <div className="h-10 w-10 rounded-full bg-[var(--gold)]/10 text-[var(--gold)] grid place-items-center">
                   <Check className="h-5 w-5" />
                 </div>
-                <p className="mt-6 font-serif text-2xl md:text-[1.6rem] font-light leading-snug text-foreground">
-                  {b}
+                <h3 className="mt-6 font-serif text-2xl md:text-[1.6rem] font-light leading-snug text-foreground">
+                  {b.title}
+                </h3>
+                <p className="mt-3 text-muted-foreground leading-relaxed">
+                  {b.body}
                 </p>
               </div>
             </Reveal>
