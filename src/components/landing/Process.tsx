@@ -6,17 +6,17 @@ const steps = [
   {
     n: "01",
     title: "Strategy Call",
-    body: "We review your current billing, denials, and aged AR.",
+    body: "We analyze your billing, identify gaps, and uncover missed revenue.",
   },
   {
     n: "02",
     title: "System Sync",
-    body: "We integrate directly into your EHR — no disruption to your workflow.",
+    body: "We connect directly to your EHR and begin work without interrupting your operations.",
   },
   {
     n: "03",
-    title: "Live Recovery within 48–72 hours",
-    body: "We start working claims and recovering revenue fast.",
+    title: "Live Recovery within 48 to 72 hours",
+    body: "We take action immediately to recover claims and accelerate your cash flow.",
   },
 ];
 
@@ -38,8 +38,8 @@ export function Process() {
               Our Process
             </div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
-              Live recovery in{" "}
-              <span className="italic text-gradient-gold">48–72&nbsp;hours.</span>
+              Revenue recovery starts within{" "}
+              <span className="italic text-gradient-gold">48 to 72&nbsp;hours.</span>
             </h2>
           </div>
         </Reveal>

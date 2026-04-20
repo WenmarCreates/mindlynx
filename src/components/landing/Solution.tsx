@@ -5,22 +5,22 @@ const services = [
   {
     icon: Zap,
     title: "Rapid VOBs",
-    body: "Fast verification of benefits so you avoid surprises and delays.",
+    body: "Quick benefit verification to prevent delays, denials, and billing surprises.",
   },
   {
     icon: RefreshCcw,
     title: "Aggressive Denial Management",
-    body: "We follow up, fix, and resubmit claims so you don't lose revenue.",
+    body: "We follow up, correct, and resubmit claims so you do not lose revenue.",
   },
   {
     icon: Workflow,
     title: "EHR Integration",
-    body: "Athena, Jane, DrChrono, Kipu — we work inside your current system.",
+    body: "Seamless integration with your current EHR for a more efficient billing workflow.",
   },
   {
     icon: ClipboardCheck,
-    title: "Aged AR Recovery (60+ days)",
-    body: "We recover the older claims that have been sitting too long.",
+    title: "Aged AR Recovery (60+ Days)",
+    body: "We recover unpaid claims that have been sitting too long, turning lost revenue back into cash flow.",
   },
 ];
 
