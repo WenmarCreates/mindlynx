@@ -27,8 +27,8 @@ export function Hero() {
       </motion.div>
 
       <div className="container-px mx-auto max-w-7xl">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
-          <div className="lg:col-span-7">
+        <div className="grid xl:grid-cols-12 gap-12 xl:gap-10 items-center">
+          <div className="xl:col-span-7">
             <motion.div
               initial={false}
               animate={{ opacity: 1, y: 0 }}
@@ -54,14 +54,14 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="font-serif font-light text-foreground"
             >
-              <span className="block whitespace-nowrap text-[clamp(1.85rem,4.4vw,3.5rem)] leading-[1.05] tracking-tight">
+              <span className="block whitespace-nowrap text-[clamp(2.25rem,6vw,4.5rem)] leading-[1.02] tracking-tight">
                 Stop Losing Revenue.
               </span>
-              <span className="mt-3 block whitespace-nowrap text-[clamp(1.85rem,4.4vw,3.5rem)] leading-[1.05] tracking-tight italic font-normal text-gradient-gold">
+              <span className="mt-2 block whitespace-nowrap text-[clamp(2.25rem,6vw,4.5rem)] leading-[1.02] tracking-tight italic font-normal text-gradient-gold">
                 Get Paid Faster.
               </span>
-              <span className="mt-6 block text-[clamp(1.4rem,2.4vw,2rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light">
-                Reduce Denials and Recover Unpaid&nbsp;Claims.
+              <span className="mt-6 block text-[clamp(1.25rem,2.2vw,1.875rem)] leading-snug tracking-tight text-muted-foreground font-sans font-light max-w-2xl">
+                Reduce Denials and Recover Unpaid Claims.
               </span>
             </motion.h1>
 
@@ -113,7 +113,7 @@ export function Hero() {
             initial={false}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1.1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 relative"
+            className="xl:col-span-5 relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-elegant">
               <img
