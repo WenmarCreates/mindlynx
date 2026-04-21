@@ -13,7 +13,7 @@ const HELP_OPTIONS = [
 ];
 
 const WEBHOOK_URL =
-  "https://aismartlinx.app.n8n.cloud/webhook-test/c5dfec92-6292-4f94-9ed2-002f1779a8c6";
+  "https://aismartlinx.app.n8n.cloud/webhook/c5dfec92-6292-4f94-9ed2-002f1779a8c6";
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false);
