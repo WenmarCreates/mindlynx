@@ -6,10 +6,10 @@ export function Footer() {
       <div className="container-px mx-auto max-w-7xl py-16 grid md:grid-cols-3 gap-10">
         <div>
           <div className="bg-primary-foreground/5 rounded-2xl p-4 inline-block">
-            <img src={logo} alt="VeriFlow Billing Solutions" className="h-20 w-auto" />
+            <img src={logo} alt="NexPrime RCM" className="h-20 w-auto" />
           </div>
           <p className="mt-4 text-sm max-w-xs">
-            VeriFlow Billing Solutions
+            NexPrime RCM
           </p>
         </div>
         <div className="text-sm">
@@ -23,7 +23,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 py-6 text-center text-xs text-primary-foreground/40">
-        © {new Date().getFullYear()} VeriFlow Billing Solutions
+        © {new Date().getFullYear()} NexPrime RCM
       </div>
     </footer>
   );
