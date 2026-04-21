@@ -6,7 +6,7 @@ import logo from "@/assets/mindlynx-logo.png";
 const NAV_LINKS = [
   { href: "#solution", label: "Services" },
   { href: "#process", label: "Process" },
-  { href: "#proof", label: "Why VeriFlow" },
+  { href: "#proof", label: "Why NexPrime" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -53,7 +53,7 @@ export function Nav() {
           <a href="#top" className="flex items-center gap-2 shrink-0" onClick={() => setOpen(false)}>
             <motion.img
               src={logo}
-              alt="MindLynx"
+              alt="NexPrime RCM"
               animate={{ height: scrolled ? 56 : 80 }}
               transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="w-auto"

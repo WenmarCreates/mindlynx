@@ -68,7 +68,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed"
             >
-              VeriFlow Billing Solutions helps behavioral health clinics
+              NexPrime RCM helps behavioral health clinics
               recover lost revenue, increase collections, and reduce denials
               without changing their current EHR or disrupting daily
               operations.

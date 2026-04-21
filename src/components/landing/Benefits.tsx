@@ -26,7 +26,7 @@ export function Benefits() {
       <div className="container-px mx-auto max-w-7xl">
         <Reveal>
           <div className="max-w-2xl">
-            <div className="eyebrow mb-6">Why VeriFlow</div>
+            <div className="eyebrow mb-6">Why NexPrime</div>
             <h2 className="font-serif text-4xl md:text-5xl leading-[1.1] font-light">
               A billing partner built around{" "}
               <span className="italic">your&nbsp;revenue.</span>
