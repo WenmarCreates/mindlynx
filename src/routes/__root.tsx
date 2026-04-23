@@ -38,8 +38,8 @@ export const Route = createRootRoute({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "NexPrime RCM — Behavioral Health Billing Specialists" },
       { name: "twitter:description", content: "Get paid faster, reduce denials, and increase monthly revenue. Specialist behavioral health billing for mental health, therapy, and substance abuse practices." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/454f1c73-1d37-44e2-bc90-f859580f62cc/id-preview-1863f495--102eb27c-0071-41a0-bd85-f3cfa4755669.lovable.app-1776689193547.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/454f1c73-1d37-44e2-bc90-f859580f62cc/id-preview-1863f495--102eb27c-0071-41a0-bd85-f3cfa4755669.lovable.app-1776689193547.png" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d90bb4ed-655d-4053-bdfb-793813e4e75d" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d90bb4ed-655d-4053-bdfb-793813e4e75d" },
     ],
     links: [
       {
