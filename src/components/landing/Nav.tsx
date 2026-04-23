@@ -5,8 +5,9 @@ import logo from "@/assets/nexprime-logo.png";
 
 const NAV_LINKS = [
   { href: "#solution", label: "Services" },
-  { href: "#process", label: "Process" },
-  { href: "#proof", label: "Why NexPrime" },
+  { href: "#process", label: "How It Works" },
+  { href: "#problem", label: "Who We Help" },
+  { href: "#proof", label: "Why Choose Us" },
   { href: "#contact", label: "Contact" },
 ];
 
