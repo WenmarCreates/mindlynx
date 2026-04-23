@@ -1,4 +1,4 @@
-import logo from "@/assets/mindlynx-logo.png";
+import logo from "@/assets/nexprime-logo.png";
 
 export function Footer() {
   return (
