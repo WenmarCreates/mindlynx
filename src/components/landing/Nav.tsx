@@ -1,7 +1,7 @@
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/mindlynx-logo.png";
+import logo from "@/assets/nexprime-logo.png";
 
 const NAV_LINKS = [
   { href: "#solution", label: "Services" },
